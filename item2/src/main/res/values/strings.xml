@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">practica_3</string>
+    <string name="action_settings">Settings</string>
+    <string name="notaF">Nota Final:</string>
+    <string name="Ingrese">Ingrese sus notas </string>
+    <string name="Activity">Actividad</string>
+    <string name="Expo">Exposiciones</string>
+    <string name="Proyect">Proy. Final</string>
+    <string name="Practi">Prácticas</string>
+    <string name="Calcula">Calcular</string>
+    <string name="Califica">Calificación</string>
+    <string name="Quiz">Quices</string>
+
+</resources>

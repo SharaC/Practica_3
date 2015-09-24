@@ -1,0 +1,301 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccione la figura"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioGroup
+                android:id="@+id/radioOperacionGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+
+                <RadioButton
+                    android:id="@+id/Icirculo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/circulo"
+                    android:textSize="20dp"
+                    android:onClick="aparece"
+                    android:checked="true"
+                    >
+
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/Icuadrado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/cuadrado"
+                    android:textSize="20dp"
+                    android:onClick="aparece">
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/Irectangulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/rectangulo"
+                    android:textSize="16dp"
+                    android:onClick="aparece">
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/Itriangulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/triangulo"
+                    android:textSize="20dp"
+                    android:onClick="aparece">
+                </RadioButton>
+            </RadioGroup>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            >
+            <ImageView
+                android:id="@+id/Imgcirculo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/circulo"
+                android:layout_margin="10dp"
+                android:visibility="visible"
+                />
+            <ImageView
+                android:id="@+id/Imgcuadrado"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/cuadrado"
+                android:layout_margin="10dp"
+                android:visibility="invisible"
+                />
+            <ImageView
+                android:id="@+id/Imgrectangulo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/rectangulo"
+                android:layout_margin="10dp"
+                android:visibility="invisible"
+                />
+            <ImageView
+                android:id="@+id/Imgtriangulo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/triangulo"
+                android:layout_margin="10dp"
+                android:visibility="invisible"
+                />
+
+
+        </FrameLayout>
+
+
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingrese las medidas:"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/Iradio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ingreseRadio"
+                    android:textSize="20dp"
+                    android:visibility="visible"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Ilado"
+                    android:text="@string/ingreseLado"
+                    android:textSize="20dp"
+                    android:visibility="invisible"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ILadoa"
+                    android:text="@string/ingreseLadoa"
+                    android:textSize="20dp"
+                    android:visibility="invisible"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Ibase"
+                    android:text="@string/ingreseBase"
+                    android:textSize="20dp"
+                    android:visibility="invisible"
+
+                    />
+
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/Eradio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="--"
+                    android:textSize="20dp"
+                    android:visibility="visible"
+                    android:background="@color/lavender"
+                    android:inputType="numberDecimal"/>
+                <EditText
+                    android:id="@+id/Elado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="--"
+                    android:textSize="20dp"
+                    android:visibility="invisible"
+                    android:background="@color/lavender"
+                    android:inputType="numberDecimal"/>
+                <EditText
+                    android:id="@+id/Eladoa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="--"
+                    android:textSize="20dp"
+                    android:visibility="invisible"
+                    android:background="@color/lavender"
+                    android:inputType="numberDecimal"/>
+                <EditText
+                    android:id="@+id/Ebase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="--"
+                    android:textSize="20dp"
+                    android:visibility="invisible"
+                    android:background="@color/lavender"
+                    android:inputType="numberDecimal"/>
+            </FrameLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ILadob"
+                    android:text="@string/ingreseLadob"
+                    android:textSize="20dp"
+                    android:visibility="invisible"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Ialtura"
+                    android:text="@string/ingreseAltura"
+                    android:textSize="20dp"
+                    android:visibility="invisible"
+                    />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/Eladob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="--"
+                    android:textSize="20dp"
+                    android:visibility="invisible"
+                    android:background="@color/lavender"
+                    android:inputType="numberDecimal"/>
+                <EditText
+                    android:id="@+id/Ealtura"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="--"
+                    android:textSize="20dp"
+                    android:visibility="invisible"
+                    android:background="@color/lavender"
+                    android:inputType="numberDecimal"/>
+            </FrameLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/ICalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="calcular"
+        android:onClick="borra"
+        android:layout_margin="10dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="El área es: "
+            android:textSize="30dp"/>
+        <TextView
+            android:id="@+id/Iresult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLength="6"
+            android:textSize="30dp"
+            android:textColor="@color/green"
+            android:hint="--"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text=" cm2"/>
+    </LinearLayout>
+
+</LinearLayout>

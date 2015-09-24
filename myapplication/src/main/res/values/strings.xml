@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="Tnombre">Nombre:</string>
+    <string name="Tapellido">Apellido: </string>
+    <string name="Tidentificacion">Documento:</string>
+    <string name="Enombre"></string>
+    <string name="femenino">Femenino</string>
+    <string name="masculino">Masculino</string>
+   <string name="selectdate">fecha de nacimiento</string>
+    <!--  <string name="nombre">Nombre:</string>
+    <string name="nombre">Nombre:</string>
+    <string name="nombre">Nombre:</string>
+    <string name="nombre">Nombre:</string>
+    <string name="nombre">Nombre:</string>
+    <string name="nombre">Nombre:</string>
+    <string name="nombre">Nombre:</string>
+    <string name="nombre">Nombre:</string> -->
+    <string name="action_settings">Settings</string>
+</resources>

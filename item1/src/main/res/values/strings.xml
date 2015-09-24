@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="num1">Numero1:</string>
+    <string name="num2">Numero2:</string>
+    <string name="calcular">Calular</string>
+    <string name="suma">Sumar</string>
+    <string name="resta">Restar</string>
+    <string name="multiplica">Multiplicar</string>
+    <string name="divide">Dividir</string>
+    <string name="resultado">Resultado:</string>
+</resources>
